@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>
+       <title>Superhero Universe!</title>
+   </title>
+   <meta charset="UTF-8">
+   <!-- responsive inspection  -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+   <!--Font Awesome-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+       crossorigin="anonymous">
+   <!--Materialize Icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--local css-->
+   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+   <!-- jquery  -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <!-- local js  -->
+   <script type="text/javascript" src="./assets/javascript/logic.js "></script>
+   <!-- firebase  -->
+   <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+</head>
+<body>
+    <nav class="red">
+        <div class="nav-wrapper">
+            <img href="#" src="assets/images/logo.png" width="60px" class="brand-logo">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+ 
+     <nav class = "white search-bar">
+         <div class="nav-wrapper">
+           <form>
+             <div class="input-field">
+               <input id="search " type="search" required>
+               <label class="label-icon" for="search"><i class="material-icons red-text">search</i></label>
+               <i class="material-icons ">close</i>
+             </div>
+           </form>
+         </div>
+       </nav>
+       
+       <div class="filter row">
+         <a class="waves-effect waves-light btn">Toys</a>
+         <a class="waves-effect waves-light btn">Games</a>
+         <a class="waves-effect waves-light btn">Movies</a>
+         <a class="waves-effect waves-light btn">Stats</a>
+         <a class="waves-effect waves-light btn">Comic Books</a>
+       </div>
+ 
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row border-b">
+                    <div class="col">
+                        <h2>Story</h2>
+                        <div class="content story">
+                                <img class="mainImage" src="assets/images/superman.jpg">
+                                Although Superman's origin has been retold many times, 
+                                the story has remained somewhat consistent throughout. 
+                                Superman's story tells of his birth as Kal-El to renowned 
+                                scientist Jor-El and his wife Lara on the alien planet Krypton. 
+                                When Jor-El discovers that the planet is going to explode, 
+                                he puts Kal-El in a spaceship heading to the planet Earth, 
+                                which crashes in a field in the state of Kansas.
+
+                                The ship and its occupant are found by Jonathan and Martha Kent, 
+                                a farming family, who take him in as their own. As he grows, so do 
+                                his strength and his strange and awesome abilities, fueled by Earth's yellow sun. 
+                                As an adult, he moves to the bustling City of Tomorrow, Metropolis, 
+                                becoming a field reporter for the Daily Planet newspaper, 
+                                and donning the identity of Superman.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-b">
+                        <div class="col">
+                            <h2>Major Story Arc</h2>
+                            <div class="content">
+                                <div class="storyArcs">For the Man Who has Everything</div>
+                                <div class="storyArcs">Death of Superman</div>
+                                <div class="storyArcs">Reign of the Supermen</div>
+                                <div class="storyArcs">Last Son</div>
+                                <div class="storyArcs">Brainiac</div>
+                                <div class="storyArcs">Birthright</div>
+                                <div class="storyArcs">The New 52</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-b">
+                        <div class="col s12">
+                            <h2>Get It At</h2>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col s4">
+                                        <h4 class="issuesT">Issue</h4>
+                                    </div>
+                                    <div class="col s4">
+                                        <h4 class="ratingT">Rating</h4>
+                                    </div>
+                                    <div class="col s4">
+                                        <h4 class="buyLinkT">Get It At</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s4">
+                                        <div class="issues">For the Man Who has Everything</div>
+                                    </div>
+                                    <div class="col s4">
+                                        <div class="rating stars">
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_border</i>
+                                        </div>
+                                    </div>
+                                    <div class="col s4">
+                                        <div><button class="buyLink waves-effect waves-light btn">Amazon</button></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s4">
+                                        <div class="issues">Death of Superman</div>
+                                    </div>
+                                    <div class="col s4">
+                                        <div class="rating stars">
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                            <i class="material-icons">star_border</i>
+                                        </div>
+                                    </div>
+                                    <div class="col s4">
+                                        <div><button class="buyLink waves-effect waves-light btn">Amazon</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+       
+
+</body>
+
+</html>

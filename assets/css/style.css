@@ -29,8 +29,10 @@ margin-top: 20px;
 
 .mainImage{
     float: right;
-    max-width: 30%;
+    max-width: 20%;
     margin-left: 2em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 .content{
     padding: 1em;
@@ -63,3 +65,18 @@ nav .brand-logo {
 .btn {
     margin-left : 10px;
 }
+
+/* stats */
+
+  
+  body, div, p, a, canvas {
+	  -moz-user-select: none; 
+	  -khtml-user-select: none; 
+	  -webkit-user-select: none; 
+	  -o-user-select: none; 
+  }
+  .absolute-center {
+	position: absolute;
+	margin: auto;
+	left: 0; right: 0; top: 0; bottom: 0;
+  }

@@ -45,9 +45,11 @@ $(function(){
         } else {
             hero.gender = "Other";
         };
-        hero.aliases = response.results[0].aliases;
+        
+        hero.aliasesraw = response.results[0].aliases;
 
-        // story
+        hero.aliases =  hero.aliasesraw.replace(/\n/ig, ', ');
+                // story
         hero.deck = response.results[0].deck;
         hero.imageUrl = response.results[0].image.original_url;
         

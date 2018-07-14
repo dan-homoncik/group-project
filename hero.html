@@ -2,80 +2,68 @@
 <html lang="en">
 
 <head>
-   <title>
-       <title>Superhero Universe!</title>
-   </title>
-   <meta charset="UTF-8">
-   <!-- responsive inspection  -->
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-   <!-- Compiled and minified JavaScript -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-   <!--Font Awesome-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-       crossorigin="anonymous">
-   <!--Materialize Icons-->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!--local css-->
-   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-   <!-- jquery  -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-   <!-- local js  -->
-   <script type="text/javascript" src="./assets/javascript/logic.js "></script>
-   <!-- hero js  -->
-   <script type="text/javascript" src="./assets/javascript/hero.js "></script>
-   <!-- firebase  -->
-   <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <title>
+        <title>Superhero Universe!</title>
+    </title>
+    <meta charset="UTF-8">
+    <!-- responsive inspection  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!--Materialize Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--local css-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- jquery  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- local js  -->
+    <!-- <script type="text/javascript" src="./assets/javascript/logic.js "></script> -->
+    <!-- hero js  -->
+    <script type="text/javascript" src="./assets/javascript/hero.js "></script>
+    <script type="text/javascript" src="./assets/javascript/statsbar.js "></script>
+    <!-- firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
 
 </head>
+
 <body>
 
     <nav class="red">
-        <div class="nav-wrapper"> 
-            <ul class= "left">
-                <li>
-                    <img href="#" src="assets/images/logo.png" width="60px" class="brand-logo">
-                </li>
-            <li>    
-                    <div class="center row">
-                        <div class="col s12 " >
-                            <div class="row" id="topbarsearch">
-                                <div class ="col">
-                                    <form class = "row">
-                                        <div class="input-field col s6 s12 white-text">
-                                            <i class="white-text material-icons prefix">search</i>
-                                            <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text heroSearch"></input>
-                                            <button onsubmit="return false" class="btn waves-effect waves-light heroSubmit" type="submit" name="action">Submit
-                                                <i class="material-icons right">send</i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>          
-                </li>  
-            </ul>
-            <ul class="right">                                  
-                <li><a href="sass.html" class="white-text">Sass</a></li>
-                <li><a href="badges.html" class="white-text">Components</a></li>
-                <li><a href="collapsible.html" class="white-text">JavaScript</a></li>
-            </ul>
+        <div class="nav-wrapper">
+            <div class="nav-wrapper">
+                
+            </div>
         </div>
-          </nav> 
+        </div>
+
+
+    </nav>
 
     <div class="container">
-       
-       <div class="filter row">
-         <a class="waves-effect waves-light btn">Toys</a>
-         <a class="waves-effect waves-light btn">Games</a>
-         <a class="waves-effect waves-light btn">Movies</a>
-         <a class="waves-effect waves-light btn stats" value = "superman" >superman</a>
-         <a class="waves-effect waves-light btn">Comic Books</a>
-       </div>
- 
+            <form>
+
+                    <input type='text' id='name-input' placeholder="Who would you like to look up?"> 
+                    </br>
+                    </br>
+                    <button onclick="return false" class="btn-floating btn-large waves-effect waves-light red" input type='submit' id='submit-name'>
+                        <i class="material-icons">search</i>
+                    </button>
+                   
+                </form>
+        <div class="row"></div>
+        <div class="filter row center">
+            <button class="waves-effect waves-light btn red">Toys</button>
+            <button class="waves-effect waves-light btn red">Games</button>
+            <button class="waves-effect waves-light btn red">Movies</button>
+            <button class="waves-effect waves-light btn red stats">Stats</button>
+            <button class="waves-effect waves-light btn red">Comic Books</button>
+        </div>
+
     </div>
     <div class="container">
         <div class="row">
@@ -89,90 +77,81 @@
                         <div class="heroGender">Gender: </div>
                         <div class="aliases border-b">Aliases:</div>
                         <h3 class="story-header">Story</h3>
-                        <img class="mainImage" src="assets/images/superman.jpg">
+                        <img class="mainImage" src="">
                         <div class="content story">
-                                Although Superman's origin has been retold many times, 
-                                the story has remained somewhat consistent throughout. 
-                                Superman's story tells of his birth as Kal-El to renowned 
-                                scientist Jor-El and his wife Lara on the alien planet Krypton. 
-                                When Jor-El discovers that the planet is going to explode, 
-                                he puts Kal-El in a spaceship heading to the planet Earth, 
-                                which crashes in a field in the state of Kansas.
 
-                                The ship and its occupant are found by Jonathan and Martha Kent, 
-                                a farming family, who take him in as their own. As he grows, so do 
-                                his strength and his strange and awesome abilities, fueled by Earth's yellow sun. 
-                                As an adult, he moves to the bustling City of Tomorrow, Metropolis, 
-                                becoming a field reporter for the Daily Planet newspaper, 
-                                and donning the identity of Superman.
                         </div>
                     </div>
                 </div>
                 <div class="row border-b">
-                        <div class="col">
-                            <h2>Publication Facts</h2>
-                            <div class="content">
-                                <div class="firstAppearance">First Appearance: Issue </div>
-                                <div class="issueCount">Number of Issue Appearances: </div>
-                                <div class="publisher">Publisher: </div>
-                            </div>
+                    <div class="col">
+                        <h2>Publication Facts</h2>
+                        <div class="content">
+                            <div class="firstAppearance">First Appearance: Issue </div>
+                            <div class="issueCount">Number of Issue Appearances: </div>
+                            <div class="publisher">Publisher: </div>
                         </div>
                     </div>
-                    <div class="row border-b">
-                        <div class="col s12">
-                            <h2>Get It At</h2>
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col s4">
-                                        <h4 class="issuesT">Issue</h4>
-                                    </div>
-                                    <div class="col s4">
-                                        <h4 class="ratingT">Rating</h4>
-                                    </div>
-                                    <div class="col s4">
-                                        <h4 class="buyLinkT">Get It At</h4>
+                </div>
+                <div class="row border-b">
+                    <div class="col s12">
+                        <h2>Get It At</h2>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col s4">
+                                    <h4 class="issuesT">Issue</h4>
+                                </div>
+                                <div class="col s4">
+                                    <h4 class="ratingT">Rating</h4>
+                                </div>
+                                <div class="col s4">
+                                    <h4 class="buyLinkT">Get It At</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    <div class="issues">For the Man Who has Everything</div>
+                                </div>
+                                <div class="col s4">
+                                    <div class="rating stars">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star_border</i>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col s4">
-                                        <div class="issues">For the Man Who has Everything</div>
-                                    </div>
-                                    <div class="col s4">
-                                        <div class="rating stars">
-                                            <i class="material-icons">star</i>
-                                            <i class="material-icons">star</i>
-                                            <i class="material-icons">star</i>
-                                            <i class="material-icons">star</i>
-                                            <i class="material-icons">star_border</i>
-                                        </div>
-                                    </div>
-                                    <div class="col s4">
-                                        <div><button class="buyLink waves-effect waves-light btn">Amazon</button></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col s4">
-                                        <div class="issues">Death of Superman</div>
-                                    </div>
-                                    <div class="col s4">
-                                        <div class="rating stars">
-                                            <i class="material-icons">star</i>
-                                            <i class="material-icons">star</i>
-                                            <i class="material-icons">star</i>
-                                            <i class="material-icons">star_half</i>
-                                            <i class="material-icons">star_border</i>
-                                        </div>
-                                    </div>
-                                    <div class="col s4">
-                                        <div><button class="buyLink waves-effect waves-light btn">Amazon</button></div>
+                                <div class="col s4">
+                                    <div>
+                                        <button class="buyLink waves-effect waves-light btn">Amazon</button>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    <div class="issues">Death of Superman</div>
+                                </div>
+                                <div class="col s4">
+                                    <div class="rating stars">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star_half</i>
+                                        <i class="material-icons">star_border</i>
+                                    </div>
+                                </div>
+                                <div class="col s4">
+                                    <div>
+                                        <button class="buyLink waves-effect waves-light btn">Amazon</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
-       
+
 
 </body>
 

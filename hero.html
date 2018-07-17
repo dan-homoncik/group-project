@@ -2,58 +2,61 @@
 <html lang="en">
 
 <head>
-   <title>
-       <title>Superhero Universe!</title>
-   </title>
-   <meta charset="UTF-8">
-   <!-- responsive inspection  -->
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-   <!-- Compiled and minified JavaScript -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-   <!--Font Awesome-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-       crossorigin="anonymous">
-   <!--Materialize Icons-->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!--local css-->
-   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-   <!-- jquery  -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-   <!-- local js  -->
-   <script type="text/javascript" src="./assets/javascript/logic.js "></script>
-   <!-- hero js  -->
-   <script type="text/javascript" src="./assets/javascript/hero.js"></script>
-   <!-- shopping js  -->
-   <script type="text/javascript" src="./assets/javascript/shopping.js"></script>
-   
-   <!-- firebase  -->
-   <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
 
-   <!-- chart library -->
-   <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
-   <!-- stats local js -->
-   <!-- <script type="text/javascript" src="assets/javascript/statsbar.js"></script> -->
+    <title>Superhero Universe!</title>
+
+    <meta charset="UTF-8">
+    <!-- responsive inspection  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!--Materialize Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--local css-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- jquery  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- local js  -->
+    <script type="text/javascript" src="./assets/javascript/logic.js "></script>
+    <!-- hero js  -->
+    <script type="text/javascript" src="./assets/javascript/hero.js"></script>
+    <!-- shopping js  -->
+    <script type="text/javascript" src="./assets/javascript/shopping.js"></script>
+
+    <!-- firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+    <!-- chart library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <!-- stats local js -->
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
+    <!-- <script type="text/javascript" src="assets/javascript/statsbar.js"></script> -->
 
 </head>
+
 <body>
 
     <nav class="red">
-        <div class="nav-wrapper"> 
-            <ul class= "left">
+        <div class="nav-wrapper">
+            <ul class="left">
                 <li>
                     <img src="assets/images/logo.png" width="60px" class="brand-logo">
                 </li>
-                <li>    
+                <li>
                     <div class="center row">
-                        <div class="col s12 " >
+                        <div class="col s12 ">
                             <div class="row" id="topbarsearch">
-                                <div class ="col">
-                                    <div class = "row">
+                                <div class="col">
+                                    <div class="row">
                                         <form class="input-field col s6 s12 white-text heroForm">
                                             <i class="white-text material-icons prefix">search</i>
-                                            <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text heroSearch"></input>
+                                            <input type="text" placeholder="Search" id="autocomplete-input" class="autocomplete white-text heroSearch"></input>
                                             <button onsubmit="return false" class="btn waves-effect waves-light heroSubmit" type="submit" name="action">Submit
                                                 <i class="material-icons right">send</i>
                                             </button>
@@ -62,9 +65,9 @@
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>          
-                </li>  
+
+                    </div>
+                </li>
             </ul>
             <!-- <ul class="right">                                  
                 <li><a href="sass.html" class="white-text">Sass</a></li>
@@ -72,63 +75,83 @@
                 <li><a href="collapsible.html" class="white-text">JavaScript</a></li>
             </ul> -->
         </div>
-          </nav> 
+    </nav>
 
     <div class="container">
-       
-    <div class="filter row">
-        <a class="waves-effect waves-light btn">Toys</a>
-        <a class="waves-effect waves-light btn">Games</a>
-        <a class="waves-effect waves-light btn">Movies</a>
-        <a class="waves-effect waves-light btn stats">superman</a>
-        <a class="waves-effect waves-light btn">Comic Books</a>
-    </div>
- 
+
+        <br>
+        <div class="filter row center">
+
+        </div>
+
     </div>
     <div class="container">
         <div class="row">
             <div class="col">
                 <div class="row border-b maincontent">
                     <div class="col">
-                        <div class="chart-container">
-                            <canvas id="myChart" width="300" height="220"></canvas>
+                        
+                        <div class="row nameRow">
+                            <h2 class="heroName"></h2>
+                            
+                                <img class="mainImage circle">
+                                <div class="chart-container">
+                                        <canvas id="myChart" width="300" height="220"></canvas>
+                                    </div>
+                          </div>
+
+                            <div class>Real Name:
+                                <span class="realName"></span>
+                            </div>
+                            <div>DOB:
+                                <span class="dateOfBirth"> </span>
+                            </div>
+                            <div>Race:
+                                <span class="heroRace"></span>
+                            </div>
+                            <div>Gender:
+                                <span class="heroGender"> </span>
+                            </div>
+                            <div>Aliases:
+                                <span class="aliases"></span>
+                            </div>
+                            <div class="border-b"></div>
+                            <h3 class="story-header">Story</h3>
+
+                            <div class="content story"></div>
                         </div>
-                        <h2 class="heroName"></h2>
-                        <div>Real Name: <span class="realName"></span></div>
-                        <div>DOB: <span class="dateOfBirth"> </span></div>
-                        <div>Race: <span class="heroRace"></span></div>
-                        <div>Gender: <span class="heroGender"> </span></div>
-                        <div>Aliases: <span class="aliases"></span></div>
-                        <div class="border-b"></div>
-                        <h3 class="story-header">Story</h3>
-                        <img class="mainImage">
-                        <div class="content story"></div>
                     </div>
                 </div>
-                <div class="row border-b">
+                <div="row border-b">
                     <div class="col">
                         <h2>Publication Facts</h2>
                         <div class="content">
-                            <div>First Appearance: Issue <span class="firstAppearance"></span></div>
-                            <div>Number of Issue Appearances: <span class="issueCount"></span></div>
-                            <div>Publisher: <span class="publisher"></span></div>
-                         </div>
+                            <div>First Appearance: Issue
+                                <span class="firstAppearance"></span>
+                            </div>
+                            <div>Number of Issue Appearances:
+                                <span class="issueCount"></span>
+                            </div>
+                            <div>Publisher:
+                                <span class="publisher"></span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row border-b">
-                    <div class="col s12">
-                        <h2>Shop</h2>
-                        <div class="content">
-                            <div class="row">
-                                <div class="col s12">
-                                    <div class="ebayLinks"></div>
-                                </div>
+            </div>
+            <div class="row border-b">
+                <div class="col s12">
+                    <h2>Shop</h2>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="ebayLinks"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 </body>

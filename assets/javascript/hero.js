@@ -14,7 +14,7 @@ $(function(){
         issueCount: "",
         heroID: ""
     }
-    var topics = ["Home", "Toys", "Movies", "Stats", "Comic Books"];
+    var topics = ["Home", "Toys", "Movies", "Comic Books"];
 
     /*$(".heroSearch").on("click", function(){
         var getInput = $(".searchTerm").val();
@@ -79,7 +79,10 @@ $(function(){
             } else {
                 hero.gender = "Other";
             };
-            hero.aliases = response.results[i].aliases;
+            hero.aliasesraw = response.results[i].aliases;
+            
+
+            hero.aliases =  hero.aliasesraw.replace(/\n/ig, ', ');
 
             // story
             hero.deck = response.results[i].deck;
@@ -123,7 +126,7 @@ $(function(){
         $(".filter").empty();
         for(var i = 0; i < topics.length; i++){
             var a = $("<button>");
-            a.addClass("waves-effect waves-light btn " + topics[i]);
+            a.addClass("waves-effect waves-light btn red " + topics[i]);
           
             a.attr("value", query);
             a.append(topics[i]);
@@ -241,14 +244,14 @@ $(function(){
             })       
     }
 
-    function hideFilterContainers(){
-        $(".chart-container").hide();  
-    }
+    // function hideFilterContainers(){
+    //     $(".chart-container").hide();  
+    // }
     
-    $(".filter").on("click", ".Stats", function(){
+    // $(".filter").on("click", ".Stats", function(){
         
-        $(".chart-container").toggle()
-    });
+    //     $(".chart-container").toggle()
+    // });
 
     $(document).on("click",".Home", function(){
         window.location= "./hero.html"
@@ -266,7 +269,8 @@ $(function(){
         window.location = "./comic.html";
     });
 
-    hideFilterContainers();
+    // hideFilterContainers()
     heroAjax();
     renderButtons();
 });
+

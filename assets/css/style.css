@@ -1,67 +1,75 @@
-
 .searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid red;
-  margin-top: 20px;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: red;
-  font-family: 'Marvel', sans-serif;
-  
+    float: left;
+    width: 100%;
+    border: 3px solid red;
+    margin-top: 20px;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: red;
+    font-family: 'Marvel', sans-serif;
 }
 
-.search{
+
+.search {
     font-size: large;
 }
 
-.logoDiv{
+.logoDiv {
     margin-top: 30vh;
-    margin-bottom: 30vh;  
-    text-align: center; 
+    margin-bottom: 30vh;
+    text-align: center;
 }
-.banner{
+
+.banner {
     position: absolute;
     z-index: -1;
 }
 
-.mainImage{
-    float: right;
-    max-width: 30%;
-    margin-left: 2em;
+.btn {
+    margin: 4px;
 }
-.content{
+
+.content {
     padding: 1em;
 }
+
+.story {
+    font-size: 22px;
+}
+
 .story::after {
     content: "";
     clear: both;
     display: table;
 }
-.border-b{
+
+.border-b {
     border-bottom: solid grey 2px;
 }
-.stars{
+
+.stars {
     color: red;
 }
 
 nav .brand-logo {
     position: relative;
-
 }
 
 .heroSubmit {
-    position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
 
 .btn {
-    margin-left : 10px;
+    margin-left: 10px;
 }
 
 .movie-holder {
@@ -73,21 +81,61 @@ nav .brand-logo {
 
 .title {
     font-size: 30px;
-  
 }
 
-.movie-container{
+.movie-container {
     width: 500px;
     height: 450px;
     float: left;
-    margin-left: 60px; 
+    margin-left: 60px;
 }
 
 .chart-container {
     width: 400px;
     height: 320px;
     margin: 20px auto;
+    position: relative;
+    float: right;
 }
 
 .deck {
-    margin-left: 50px;}
+    margin-left: 50px;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+
+html {
+    font: 1em/1.5 "Marvel", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+.mainImage {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    position: relative;
+    object-fit: fill;
+
+  
+
+    
+}
+
+.nameRow {
+    overflow: auto;
+    text-align: center;
+}
+
+.comics-container {
+
+    clear: both
+}

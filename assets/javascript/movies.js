@@ -70,7 +70,7 @@ $(document).ready(function() {
         var getInput = $(".heroSearch").val();
         localStorage.setItem("query", getInput);
         query = localStorage.getItem("query");
-       $(".heroSearch").empty();
+        $(".heroSearch").empty();
         $(".movie-box").empty();
          displayMovie();
     //    hello();
